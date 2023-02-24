@@ -1,8 +1,8 @@
 <?php
 $Title = 'Products';
-require_once '../file-inclusion/layout/head.php';
-require_once '../file-inclusion/layout/header.php';
-require_once '../file-inclusion/data/products.php';
+require_once __DIR__.'/../file-inclusion/layout/head.php';
+require_once __DIR__.'/../file-inclusion/layout/header.php';
+require_once __DIR__.'/../file-inclusion/data/products.php';
 
 $html = '<table class="table table-striped table-bordered table-hover">
     <thead>
@@ -30,4 +30,4 @@ $html.='</tr>
 $html = '<div class="container">'.$html.'</div>';
 echo $html;
 
-require_once '../file-inclusion/layout/footer.php';
+require_once __DIR__.'../file-inclusion/layout/footer.php';
