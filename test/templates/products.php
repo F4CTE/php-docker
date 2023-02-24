@@ -1,4 +1,5 @@
 <?php
+$Title = 'Products';
 require_once '../file-inclusion/layout/head.php';
 require_once '../file-inclusion/layout/header.php';
 require_once '../file-inclusion/data/products.php';

@@ -1,6 +1,7 @@
 <?php
-require_once '../file-inclusion/layout/head.php';
-require_once '../file-inclusion/layout/header.php';
+    $Title = 'Contact';
+    require_once '../file-inclusion/layout/head.php';
+    require_once '../file-inclusion/layout/header.php';
 ?>
 <main class="d-flex align-items-center">
     <div class="container">
@@ -28,5 +29,5 @@ require_once '../file-inclusion/layout/header.php';
     </div>
 </main>
 <?php
-require_once '../file-inclusion/layout/footer.php';
+    require_once '../file-inclusion/layout/footer.php';
 ?>
