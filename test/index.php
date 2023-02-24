@@ -127,3 +127,30 @@ $products = [
         'color' => '#9752a6'
     ],
 ];
+
+$html = '<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Promo</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>';
+    foreach ($products as $product) {
+        $html .= '<tr>';
+        foreach ($product as $key => $value) {
+            if ($key === 'promo') {
+                $value = $value ? 'Yes' : 'No';
+            }
+            $html .= '<td>' . $value . '</td>';
+        }
+        $html .= '</tr>';
+    }
+    $html.= '</tbody>
+</table>';
+
+$html = '<div class="container">'.$html.'</div>';
+echo $html;
